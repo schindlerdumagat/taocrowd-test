@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+}
+
+input {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.flights{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 80vh;
+    overflow-y: scroll;
+    width: fit-content;
+}
+
+.flight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(black, 0.3);
+    padding: 10px;
+
+    .title {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+
+        span {
+            padding: 3px 3px 3px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    }
+
+    .links {
+        display: flex;
+        gap: 5px;
+
+        p {
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .description {
+        display: flex;
+
+        img {
+            width: 10%;
+        }
+    }
+
+    button {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        align-self: start;
+        cursor: pointer;
+    }
+}
